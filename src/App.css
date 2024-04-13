@@ -1,0 +1,13 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.nav-links {
+  transition: max-height 0.3s ease-in-out;
+  max-height: 0;
+  overflow: hidden;
+}
+
+.nav-links.active {
+  max-height: 500px; /* Adjust the height as needed */
+}
