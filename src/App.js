@@ -25,11 +25,8 @@ function App() {
           <Route path ="/Skills" element ={<Skills/>}/>
           <Route path ="/Honors" element ={<Honors/>}/>
           <Route path ="/Certs" element ={<Certs/>}/> 
-          {/* <Hiro />  */}
-          {/* <Skills />
-          <Honors />
-          <Certs />
-  <Footer />*/}
+          {/* catches any false route and send back to home page */}
+          <Route path="*" element={<Hiro/>}/> 
         </Routes> 
       </div>
     </Router>
