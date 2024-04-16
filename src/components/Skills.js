@@ -2,27 +2,31 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import SkillCard from "./SkillCard.js"
-import Navbar from './Navbar.js';
 
+// Language icons for card
 import javascript from "../assets/skills/javascript.svg"
-import bash from "../assets/skills/bash.svg"
-import kvm from "../assets/skills/kvm.svg"
-import linux from "../assets/skills/linux.svg"
 import python from "../assets/skills/python.svg"
+import html from "../assets/skills/html.svg"
+import sql from "../assets/skills/sql.png"
+import typescript from '../assets/skills/typescript.png'
+import css from '../assets/skills/css.png'
+import dart from '../assets/skills/Dart_logo.png'
+import lua from '../assets/skills/lua.png'
+
+// Framework/Library icons for card
 import reactIcon from "../assets/skills/react.svg"
 import tailwind from "../assets/skills/tailwind.svg"
-import mikrotik from "../assets/skills/mikrotik.svg"
-import kubernetes from "../assets/skills/kubernetes.svg"
-import ansible from "../assets/skills/ansible.svg"
-import windows from "../assets/skills/windows.svg"
-import react from "../assets/skills/react.svg"
-import cisco from "../assets/skills/cisco.svg"
-import docker from "../assets/skills/docker.svg"
 import git from "../assets/skills/git.svg"
 import express from "../assets/skills/express.svg"
-import gitlab from "../assets/skills/gitlab.svg"
+import node from "../assets/skills/nodejs.svg"
+import angular from '../assets/skills/angular.png'
+import SCSS from '../assets/skills/scss.png'
+import jquery from '../assets/skills/jquery.png'
+import django from '../assets/skills/django.png'
+import mysql from '../assets/skills/mysql.png'
+import mongo from '../assets/skills/mongo.png'
+import flutter from '../assets/skills/flutter.png'
 
-import hr from "../assets/curve-hr.svg"
 
 export default function Skills() {
     const settings = {
@@ -43,11 +47,14 @@ export default function Skills() {
                 <Slider {...settings}>
                 <SkillCard name="Python" img={python} />
                 <SkillCard name="Javascript" img={javascript} />
-                <SkillCard name="Typescript" img={react} />
-                <SkillCard name="SQL" img={docker} />
+                <SkillCard name="Typescript" img={typescript} />
+                <SkillCard name="SQL" img={sql} />
+                <SkillCard name="HTML" img={html} />
+                <SkillCard name="CSS" img={css} />
+                <SkillCard name="Dart" img={dart} />
+                <SkillCard name="Lua" img={lua} />
                 </Slider>
             </div>
-            {/* <img src={hr} className="w-full mt-8 md:h-3" alt="hr" /> */}
 
            
 
@@ -55,10 +62,17 @@ export default function Skills() {
             <h1 className="mt-4 mb-2 text-xl font-bold">Frameworks, Libraries and Tools</h1>
                 <Slider {...settings}>
                 <SkillCard name="React" img={reactIcon} />
-                <SkillCard name="Tailwind" img={tailwind} />
-                <SkillCard name="Git" experience="1 years" img={git} />
-                <SkillCard name="Express" experience="1 years" img={express} />
-                <SkillCard name="Flutter" experience="1 years" img={gitlab} />
+                <SkillCard name="Angular" img={angular} />
+                <SkillCard name="Node" img={node} />
+                <SkillCard name="Tailwind CSS" img={tailwind} />
+                <SkillCard name="SCSS" img={SCSS} />
+                <SkillCard name="jQuery" img={jquery} />
+                <SkillCard name="Django" img={django} />
+                <SkillCard name="MySQL" img={mysql} />
+                <SkillCard name="MongoDB" img={mongo} />
+                <SkillCard name="Git" img={git} />
+                <SkillCard name="Express" img={express} />
+                <SkillCard name="Flutter" img={flutter} />                
                 </Slider>
             </div>
         </div>
