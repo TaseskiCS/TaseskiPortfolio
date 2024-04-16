@@ -1,9 +1,8 @@
 {
   "files": {
     "main.css": "/TaseskiPortfolio/static/css/main.18c17606.css",
-    "main.js": "/TaseskiPortfolio/static/js/main.b9af6947.js",
+    "main.js": "/TaseskiPortfolio/static/js/main.0f0b1cee.js",
     "static/js/787.cd9c6251.chunk.js": "/TaseskiPortfolio/static/js/787.cd9c6251.chunk.js",
-    "static/media/resume.pdf": "/TaseskiPortfolio/static/media/resume.09243a26045e17f24db8.pdf",
     "static/media/dicoding-aws.png": "/TaseskiPortfolio/static/media/dicoding-aws.11f75438858fbac4779f.png",
     "static/media/TaseskiLogo2.png": "/TaseskiPortfolio/static/media/TaseskiLogo2.1d33bd2416ccfca30ed0.png",
     "static/media/mikrotik.svg": "/TaseskiPortfolio/static/media/mikrotik.d2e17a6764779d1cc982433d85aeeb58.svg",
@@ -11,6 +10,7 @@
     "static/media/serblinkoutline.png": "/TaseskiPortfolio/static/media/serblinkoutline.d702e158bb52acd36bbd.png",
     "static/media/dropdown.png": "/TaseskiPortfolio/static/media/dropdown.33823a6b7be2b5001593.png",
     "static/media/mtcna.jpg": "/TaseskiPortfolio/static/media/mtcna.2ee5684f51d76ad95490.jpg",
+    "static/media/resume.pdf": "/TaseskiPortfolio/static/media/resume.6808fca79f9a09e1f04c.pdf",
     "static/media/dsa.png": "/TaseskiPortfolio/static/media/dsa.40fd3077b249f7a18f40.png",
     "static/media/lcs.png": "/TaseskiPortfolio/static/media/lcs.ca460a235b166990ce58.png",
     "static/media/citizenfx.png": "/TaseskiPortfolio/static/media/citizenfx.bec7035eb0d8e4818726.png",
@@ -38,11 +38,11 @@
     "static/media/windows.svg": "/TaseskiPortfolio/static/media/windows.680a11acd0ab401f69e83c7caba17dc0.svg",
     "index.html": "/TaseskiPortfolio/index.html",
     "main.18c17606.css.map": "/TaseskiPortfolio/static/css/main.18c17606.css.map",
-    "main.b9af6947.js.map": "/TaseskiPortfolio/static/js/main.b9af6947.js.map",
+    "main.0f0b1cee.js.map": "/TaseskiPortfolio/static/js/main.0f0b1cee.js.map",
     "787.cd9c6251.chunk.js.map": "/TaseskiPortfolio/static/js/787.cd9c6251.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.18c17606.css",
-    "static/js/main.b9af6947.js"
+    "static/js/main.0f0b1cee.js"
   ]
 }
