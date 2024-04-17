@@ -1,11 +1,9 @@
 import CertCard from "./CertCard.js"
 
-import hr from "../assets/curve-hr.svg"
-import mtcna from "../assets/certs/mtcna.jpg"
+
 import serblink from "../assets/serblinkoutline.png"
 import citizenfx from "../assets/citizenfx.png"
 import lcs from "../assets/lcs.png"
-import dicodingAws from "../assets/certs/dicoding-aws.png"
 
 
 // import 
