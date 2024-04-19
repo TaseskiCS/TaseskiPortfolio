@@ -20,7 +20,7 @@ export default function Certs(){
             <div className="grid grid-cols-1 md:grid-cols-3 justify-center mt-4 gap-5">
                 <CertCard name="Frontend Software Engineer" type='image'img={serblink} link ='https://serblink.org/'issued="SerbLink" date="Dec 2023 - Present" />
                 <CertCard name="Full Stack Software Engineer" type='image' img={citizenfx} link = 'https://github.com/citizenfx'issued="CitizenFX - Freelance" date="Feb 2021 - March 2024" />
-                <CertCard name="Mobile Developer" img={lcs} type='image' link = 'https://lauriercs.ca/'issued="Laurier CS Club" date="Feb 2024 - Present" />
+                <CertCard name="Full Stack Developer" img={lcs} type='image' link = 'https://lauriercs.ca/'issued="Laurier CS Club" date="Feb 2024 - Present" />
             </div>
 
             <h1 className="text-5xl font-bold mt-20 text-center">Projects</h1>
