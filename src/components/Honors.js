@@ -7,7 +7,7 @@ import python from "../assets/skills/python.svg"
 
 export default function Honors(){
     return (
-        <div id="honors" className="h-screen p-20 mt-20 text-white">
+        <div id="honors" className="min-h-screen p-20 mt-20 text-white">
             <h1 className="text-5xl font-bold">Education And Related Coursework</h1>
             <p className="font-light text-gray-400">Class of 2027</p>
             <div className ='flex justify-center mb-1'>

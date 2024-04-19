@@ -1,7 +1,7 @@
 
 export default function HonorCard(props){
     return (
-        <div data-aos="fade-up" data-aos-duration="500" data-aos-offset="100"  className="lg:w-60 sm:w-40 md:w-40 bg-dark-100 rounded-md py-4 px-4">
+        <div className="lg:w-60 sm:w-40 md:w-40 bg-dark-100 rounded-md py-4 px-4">
             <img src={props.img} className="w-20 max-h-20 mx-auto" alt={props.name}></img> 
             <div className="mt-2 overflow-y-auto">
                 <h1 className="font-bold md:text-xl">{props.name}</h1>

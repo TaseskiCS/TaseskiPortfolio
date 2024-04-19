@@ -34,16 +34,30 @@ export default function Skills() {
         autoplay: true,
         infinite: true,
         slidesToShow: 3,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+        responsive: [
+            {
+                breakpoint: 600, // Adjust this value as needed
+                settings: {
+                    slidesToShow: 2
+                }
+            },
+            {
+                breakpoint: 450, // Adjust this value as needed
+                settings: {
+                    slidesToShow: 1
+                }
+            }
+        ]
       };
 
     return (
-        <div className="h-screen p-20 mt-20 text-white">
-            <h3 className="text-5xl font-bold mb-5">Skills</h3>
-            <p className="font-light text-gray-400">Here are some of my skills I have experience with in development!</p>
+        <div className="min-h-screen pt-20 pb-8 mt-20 text-white">
+            <h3 className="text-5xl font-bold mb-5 text-center">Skills</h3>
+            <p className="font-light text-gray-400 text-xl text-center">Here are some of my skills I have experience with in development!</p>
 
-            <div className="mt-20 ">
-                <h1 className="mb-2 text-xl font-bold">Languages</h1>
+            <div className="mt-20 w-full">
+                <h1 className="mb-2 text-3xl font-bold">Languages</h1>
                 <Slider {...settings}>
                 <SkillCard name="Python" img={python} />
                 <SkillCard name="Javascript" img={javascript} />
@@ -59,7 +73,7 @@ export default function Skills() {
            
 
             <div className="mt-6">
-            <h1 className="mt-4 mb-2 text-xl font-bold">Frameworks, Libraries and Tools</h1>
+            <h1 className="mt-40 mb-2 text-3xl font-bold">Frameworks, Libraries and Tools</h1>
                 <Slider {...settings}>
                 <SkillCard name="React" img={reactIcon} />
                 <SkillCard name="Angular" img={angular} />

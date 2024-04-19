@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import taseski from '../assets/TaseskiLogo2.png'; 
-import resume from '../assets/resume.pdf';
+import resume from '../assets/Resume_TaseskiCS.pdf';
 import dropdown from '../assets/dropdown.png'
 import closemenu from '../assets/closemenu.png'
 
