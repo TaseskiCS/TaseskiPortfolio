@@ -28,7 +28,7 @@ export default function Hiro () {
                     <h1 className="mb-3 text-xl text-gray-400">Hello! My name is</h1>
                     <h1 className="mb-3 text-3xl font-bold">Antonio Taseski</h1>
                     <p class="text-xl font-bold text-gray-300">Software Engineer</p>
-                    <p className="text-md font-light text-gray-400 ">Passionate first-year Computer Science student, taking initiative to tackle challenges, and dive into the world of technology and innovation.</p>
+                    <p className="text-md font-light text-gray-400 ">Passionate second-year Computer Science student, taking initiative to tackle challenges, and dive into the world of technology and innovation.</p>
                 </div>
                
                 
