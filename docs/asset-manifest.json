@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/static/css/main.a87d6cd2.css",
-    "main.js": "/static/js/main.25fc71da.js",
+    "main.css": "/static/css/main.0dac8bdd.css",
+    "main.js": "/static/js/main.a01c740b.js",
     "static/js/787.47e5575f.chunk.js": "/static/js/787.47e5575f.chunk.js",
     "static/media/box.png": "/static/media/box.ccc57915311d8b4431b1.png",
     "static/media/TaseskiLogo2.png": "/static/media/TaseskiLogo2.1d33bd2416ccfca30ed0.png",
+    "static/media/AntonioTaseski.pdf": "/static/media/AntonioTaseski.770ea19de9401dcd5523.pdf",
     "static/media/laurier.png": "/static/media/laurier.5fbc4ab040e1a271c12e.png",
     "static/media/serblinkoutline.png": "/static/media/serblinkoutline.d702e158bb52acd36bbd.png",
     "static/media/dropdown.png": "/static/media/dropdown.33823a6b7be2b5001593.png",
-    "static/media/Resume_TaseskiCS.pdf": "/static/media/Resume_TaseskiCS.7d3532209180be736030.pdf",
     "static/media/lua.png": "/static/media/lua.7ec6d7b906d58f76e50f.png",
     "static/media/dsa.png": "/static/media/dsa.40fd3077b249f7a18f40.png",
     "static/media/lcs.png": "/static/media/lcs.ca460a235b166990ce58.png",
@@ -36,12 +36,12 @@
     "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
     "static/media/express.svg": "/static/media/express.ea97b712340ffb8f11d85ccb96309507.svg",
     "index.html": "/index.html",
-    "main.a87d6cd2.css.map": "/static/css/main.a87d6cd2.css.map",
-    "main.25fc71da.js.map": "/static/js/main.25fc71da.js.map",
+    "main.0dac8bdd.css.map": "/static/css/main.0dac8bdd.css.map",
+    "main.a01c740b.js.map": "/static/js/main.a01c740b.js.map",
     "787.47e5575f.chunk.js.map": "/static/js/787.47e5575f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a87d6cd2.css",
-    "static/js/main.25fc71da.js"
+    "static/css/main.0dac8bdd.css",
+    "static/js/main.a01c740b.js"
   ]
 }

@@ -4,9 +4,8 @@ import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 import Navbar from './components/Navbar';
 import Hiro from './components/Hiro';
 import Skills from './components/Skills'
-import Honors from './components/Honors';
-import Certs from './components/Certs';
-import Footer from './components/Footer';
+import Education from './components/Education';
+import Experience from './components/Experience';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -23,8 +22,8 @@ function App() {
         <Routes>
           <Route path ="/" element ={<Hiro/>}/>
           <Route path ="/Skills" element ={<Skills/>}/>
-          <Route path ="/Honors" element ={<Honors/>}/>
-          <Route path ="/Certs" element ={<Certs/>}/> 
+          <Route path ="/Education" element ={<Education/>}/>
+          <Route path ="/Experience" element ={<Experience/>}/> 
           {/* catches any false route and send back to home page */}
           <Route path="*" element={<Hiro/>}/> 
         </Routes> 

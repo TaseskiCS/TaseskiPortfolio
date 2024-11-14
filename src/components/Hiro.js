@@ -19,8 +19,8 @@ export default function Hiro () {
             :
             null
         }
-        <div id="home" className="flex w-full h-screen flex-col md:flex-row gap-5 items-center justify-center text-white relative">
-            <div className='md:w-2/6 md:p-4 rounded'>
+        <div id="home" className="bg-dark-500 flex w-full h-full md:h-screen pb-20 flex-col md:flex-row gap-5 items-center justify-center text-white relative">
+            <div className='mt-40 md:mt-10 md:w-2/6 md:p-4 rounded'>
                 <img className = 'rounded-full'data-aos="flip-right" data-aos-duration="1500" data-aos-offset="200"  src={profile} alt="profile" onLoad={() => setLoaded(false)} />
             </div>
             <div className='md:w-3/6' data-aos="fade-right" data-aos-duration="1000" data-aos-offset="100" >

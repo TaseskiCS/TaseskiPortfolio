@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import taseski from '../assets/TaseskiLogo2.png'; 
-import resume from '../assets/Resume_TaseskiCS.pdf';
+import resume from '../assets/AntonioTaseski.pdf';
 import dropdown from '../assets/dropdown.png'
 import closemenu from '../assets/closemenu.png'
 
@@ -13,7 +13,7 @@ export default function Navbar() {
     };
 
     return (
-        <div className='fixed z-50 bg-stone-600 w-full top-0 left-0 px-8 py-4 lg:px-20 xl:px-36'>
+        <div className='fixed z-50 bg-dark-500 w-full top-0 left-0 px-8 py-4 lg:px-20 xl:px-36'>
             <div className="flex justify-between items-center text-white">
                 <img src={taseski} className="overflow-hidden App-logo w-20" alt="logo" />
                 <button className="md:hidden" onClick={toggleMenu}>
@@ -26,28 +26,28 @@ export default function Navbar() {
                     </div>
                 </button>
                 <ul className={`md:flex ${menuOpen ? 'block' : 'hidden'}`}>
-                    <li className="bg-black mr-5 p-4 border rounded ">
+                    <li className="mr-5 p-4">
                         <Link to="/">
-                            <a className="hover:underline">About</a>
+                            <h3 className="font-bold text-lg hover:underline">About</h3>
                         </Link>
                     </li>
-                    <li className="bg-black mr-5 p-4 border rounded">
+                    <li className="mr-5 p-4">
                         <Link to="/Skills">
-                            <a className="hover:underline">Skills</a>
+                            <h3 className="font-bold text-lg hover:underline">Skills</h3>
                         </Link>
                     </li>
-                    <li className="bg-black mr-5 p-4 border rounded">
-                        <Link to="/Honors">
-                            <a className="hover:underline">Education</a>
+                    <li className="mr-5 p-4">
+                        <Link to="/Education">
+                            <h3 className="font-bold text-lg hover:underline">Education</h3>
                         </Link>
                     </li>
-                    <li className="bg-black mr-5 p-4 border rounded">
-                        <Link to="/Certs">
-                            <a className="hover:underline">Experience</a>
+                    <li className="mr-5 p-4">
+                        <Link to="/Experience">
+                            <h3 className="font-bold text-lg hover:underline">Experience</h3>
                         </Link>
                     </li>
                 </ul>
-                <a href={resume} rel="noreferrer" target="_blank" className=" bg-white rounded px-4 py-4 border border-stone-800 border border-4 text-black">Preview Resume</a>
+                <a href={resume} rel="noreferrer" target="_blank" className=" bg-gray-400 rounded-lg px-4 py-2 font-bold border-white border-2 text-white">Preview Resume</a>
             </div>
         </div>
     );
