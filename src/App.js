@@ -2,10 +2,11 @@ import './App.css';
 import {useEffect} from 'react'
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 import Navbar from './components/Navbar';
-import Hiro from './components/Hiro';
-import Skills from './components/Skills'
+import Home from './components/Home';
+import Skills from './components/Skills/Skills.js'
+import Carousel from './components/Skills/Carousel/Carousel.js';
 import Education from './components/Education';
-import Experience from './components/Experience';
+import Experience from './components/Experience/Experience.js';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -16,17 +17,44 @@ function App() {
       AOS.init();
     }, []);
   return (
+    
     <Router>
-      <div className="px-6 lg:px-20 xl:px-36 bg-dark-500">
-        <Navbar/>
-        <Routes>
-          <Route path ="/" element ={<Hiro/>}/>
-          <Route path ="/Skills" element ={<Skills/>}/>
-          <Route path ="/Education" element ={<Education/>}/>
-          <Route path ="/Experience" element ={<Experience/>}/> 
-          {/* catches any false route and send back to home page */}
-          <Route path="*" element={<Hiro/>}/> 
-        </Routes> 
+      <div className="bg-dark-500">
+      {/* Navbar */}
+      <Navbar />
+
+      
+        {/* <div className="pt-[80px] px-6 lg:px-20 xl:px-36">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/Skills" element={<Skills />} />
+            <Route path="/Education" element={<Education />} />
+            <Route path="/Experience" element={<Experience />} />
+            <Route path="*" element={<Home />} />
+          </Routes>
+        </div> */}
+        {/* Sections */}
+        <div className="pt-[80px] px-6 lg:px-20 xl:px-36">
+          <section id="Home">
+            <Home/>
+          </section>
+          <section id="Skills">
+            <Skills/>
+          </section>
+          <section id="Experience">
+            <Experience/>
+          </section>
+
+          <section id="Education">
+              <Education/>
+          </section>
+
+
+
+
+          
+        </div>
+      
       </div>
     </Router>
   );

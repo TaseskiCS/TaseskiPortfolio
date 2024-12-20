@@ -1,54 +1,89 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import taseski from '../assets/TaseskiLogo2.png'; 
 import resume from '../assets/AntonioTaseski.pdf';
-import dropdown from '../assets/dropdown.png'
-import closemenu from '../assets/closemenu.png'
+import dropdown from '../assets/dropdown.png';
+import closemenu from '../assets/closemenu.png';
 
 export default function Navbar() {
     const [menuOpen, setMenuOpen] = useState(false);
+    const [activeSection, setActiveSection] = useState('Home'); 
+
+    const sections = ['Home', 'Skills', 'Experience', 'Education'];
+
+    const scrollToSection = (id) => {
+        const section = document.getElementById(id);
+        if (section) {
+            section.scrollIntoView({ behavior: 'smooth' });
+        }
+    };
 
     const toggleMenu = () => {
         setMenuOpen(!menuOpen);
     };
 
+
+    useEffect(() => {
+        const handleScroll = () => {
+            sections.forEach((section) => {
+                const element = document.getElementById(section);
+                if (element) {
+                    const rect = element.getBoundingClientRect();
+                    if (rect.top <= window.innerHeight / 2 && rect.bottom >= window.innerHeight / 2) {
+                        setActiveSection(section);
+                    }
+                }
+            });
+        };
+
+        window.addEventListener('scroll', handleScroll);
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+
     return (
-        <div className='fixed z-50 bg-dark-500 w-full top-0 left-0 px-8 py-4 lg:px-20 xl:px-36'>
-            <div className="flex justify-between items-center text-white">
-                <img src={taseski} className="overflow-hidden App-logo w-20" alt="logo" />
-                <button className="md:hidden" onClick={toggleMenu}>
-                    <div className="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        {menuOpen ? (
-                            <img src={closemenu} className="overflow-hidden App-logo w-40" alt="logo" />
-                        ) : (
-                            <img src={dropdown} className="overflow-hidden App-logo w-40" alt="logo" />
-                        )}
-                    </div>
-                </button>
-                <ul className={`md:flex ${menuOpen ? 'block' : 'hidden'}`}>
-                    <li className="mr-5 p-4">
-                        <Link to="/">
-                            <h3 className="font-bold text-lg hover:underline">About</h3>
-                        </Link>
-                    </li>
-                    <li className="mr-5 p-4">
-                        <Link to="/Skills">
-                            <h3 className="font-bold text-lg hover:underline">Skills</h3>
-                        </Link>
-                    </li>
-                    <li className="mr-5 p-4">
-                        <Link to="/Education">
-                            <h3 className="font-bold text-lg hover:underline">Education</h3>
-                        </Link>
-                    </li>
-                    <li className="mr-5 p-4">
-                        <Link to="/Experience">
-                            <h3 className="font-bold text-lg hover:underline">Experience</h3>
-                        </Link>
-                    </li>
-                </ul>
-                <a href={resume} rel="noreferrer" target="_blank" className=" bg-gray-400 rounded-lg px-4 py-2 font-bold border-white border-2 text-white">Preview Resume</a>
+        <>
+            <div className='fixed z-50 backdrop-blur-sm w-full top-0 left-0 px-8 py-4 lg:px-20 xl:px-36'>
+                <div className="flex justify-between items-center text-white">
+                    <img src={taseski} className="overflow-hidden App-logo w-20" alt="logo" />
+                    <button className="md:hidden" onClick={toggleMenu}>
+                        <div className="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            {menuOpen ? (
+                                <img src={closemenu} className="overflow-hidden App-logo w-40" alt="logo" />
+                            ) : (
+                                <img src={dropdown} className="overflow-hidden App-logo w-40" alt="logo" />
+                            )}
+                        </div>
+                    </button>
+                    <ul className={`md:flex ${menuOpen ? 'block' : 'hidden'}`}>
+                        {sections.map((section) => (
+                            <li key={section} className="mr-5 p-4">
+                                <Link to={`/${section}`}>
+                                    <button onClick={() => scrollToSection(section)} className="font-bold text-lg">
+                                        {section}
+                                    </button>
+                                </Link>
+                            </li>
+                        ))}
+                    </ul>
+                    <a href={resume} rel="noreferrer" target="_blank" className="bg-gray-400 rounded-lg px-4 py-2 font-bold border-white border-2 text-white">
+                        Preview Resume
+                    </a>
+                </div>
             </div>
-        </div>
+            <div className="fixed z-50 right-8 top-1/2 transform -translate-y-1/2 flex flex-col items-center space-y-4">
+                {sections.map((section) => (
+                    <div
+                        key={section}
+                        onClick={() => scrollToSection(section)}
+                        className={`w-4 h-4 rounded-full cursor-pointer ${
+                            activeSection === section ? 'bg-white w-6 h-6' : 'bg-gray-500'
+                        }`}
+                        title={section}
+                    />
+                ))}
+            </div>
+        </>
     );
 }

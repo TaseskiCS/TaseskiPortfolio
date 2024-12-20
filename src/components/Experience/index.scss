@@ -1,0 +1,223 @@
+$color-primary: #ffffff;
+$color-secondary: #878f99;
+$color-tertiary: #ffffff;
+$color-light: #f5f5f5;
+$color-mid: $color-secondary;//#777
+$color-dark: #200000;
+$font-primary: 'Open Sans';
+
+@mixin transition($args...) {
+  @each $prefix in '-webkit-', '-moz-', '-ms-', '-o-', '' {
+    #{$prefix}transition: $args;
+  }
+}
+
+@mixin breakpointLarge {
+  @media screen and (max-width: 60em) {
+    @content;
+  }
+}
+
+%clearfix {
+  &::after, &::before {
+  content: '';
+  display: block;
+  width: 100%;
+  clear: both;
+  }
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+
+
+a {
+  $transition: all .4s;
+
+  position: relative;
+  font-weight: bold;
+  color: $color-light;
+  text-decoration: none;
+  @include transition($transition);
+
+
+  &:hover::before {
+    width: 100%;
+    height: 5px;
+    left: 0;
+  }
+
+}
+
+// --- //
+
+.vertical-timeline {
+  $width-broken: 90%;
+  $timeline-color: $color-light;
+  
+  width: 100%;
+  margin: 30px auto;
+  padding: 0 10px;
+  position: relative;
+  color: $color-dark;
+  @include transition(all .4s ease);
+
+	&::before {
+	  content: '';
+    position: absolute;
+		left: 50%;
+		top: 0;
+	  width: 3px;
+	  height: 100%;
+		background: $timeline-color;
+	}
+
+	&::after {
+		content: '';
+		clear: both;
+		display: table;
+		width: 100%;
+	}
+  
+  @include breakpointLarge {
+    width:$width-broken;
+		margin: 30px;
+		padding: 0px;
+    
+		&::before {
+			left: 0;
+		}
+  }
+  
+  .vertical-timeline--badge {
+    $dimen: 25px;
+    background: $timeline-color;
+    width: $dimen;
+    height: $dimen;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    overflow: hidden;
+    margin-left: - $dimen / 2 + 1px;
+    border-radius: 50%;
+
+    @include breakpointLarge {
+      left: 0;
+    }
+  }
+	
+	.vertical-timeline--item {
+    $item-width: 45%;
+    $title-height: 50px;
+		margin-bottom: $title-height;
+		position: relative;
+    color: $color-light;
+		@extend %clearfix;
+
+		.vertical-timeline--content {
+			width: 20rem;
+      display: flex;
+      justify-content: center;
+			
+        --tw-bg-opacity: 1;
+        background-color: rgb(156 163 175 / var(--tw-bg-opacity)) /* #9ca3af */;
+			padding: 15px;
+			@include transition(all .3s ease);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+
+			h3 {
+				margin: -20px -20px 0 -20px;
+        padding: 15px;
+        background-color: $timeline-color;
+        color: $color-dark;
+        font-size: 1em;
+				font-weight: 500;
+        text-align: left;
+				border-radius: 0;
+			}
+      
+      p {
+        position: relative;
+        margin: 20px;
+        text-align: left;
+      }
+      
+      a {
+        position: relative;
+      }
+      
+			&::after {
+				content: '';
+				position: absolute;
+				left: $item-width;
+				top: 10px;
+				width: 0;
+				height: 0;
+				border-top: 7px solid transparent;
+				border-bottom: 7px solid transparent;
+				border-left: 7px solid $timeline-color;
+			}
+      
+      @include breakpointLarge {
+        width: $width-broken;
+        float: right;
+
+        &::after {
+          left: 10%;
+          margin-left: -6px;
+          border-left: 0;
+          border-right: 7px solid $timeline-color;
+        }
+      }
+		}
+    
+    &::before {
+      content: '';
+      position: absolute;
+      top: calc(#{$title-height} - 1px);
+      display: block;
+      width: $item-width;
+      height: calc(100% - #{$title-height} + 1px);
+     
+    
+    }
+    
+    @include breakpointLarge {
+      &::before {
+        right: 0;
+        width: $width-broken;
+      }
+    }
+    
+    &.right {
+      &::before {
+        right: 0;
+      }
+      
+      .vertical-timeline--content {
+        float: right;
+
+        &::after {
+          content: '';
+          right: $item-width;
+          left: inherit;
+          border-left: 0;
+          border-right: 7px solid $timeline-color;
+        }
+        
+        @include breakpointLarge {
+          &::after {
+            left: 10%;
+            margin-left: -6px;
+          }
+        }
+      }
+    }
+	}
+}

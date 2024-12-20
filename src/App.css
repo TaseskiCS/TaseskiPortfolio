@@ -1,3 +1,50 @@
+.arrow-bounce {
+  text-align: center;
+  font-size: 60px;
+}
+
+.bounce {
+  -webkit-animation: bounce 2s 10;
+  animation: bounce 2s 10;
+}
+@-webkit-keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-30px);
+            transform: translateY(-30px);
+  }
+  60% {
+    -webkit-transform: translateY(-15px);
+            transform: translateY(-15px);
+  }
+}
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-30px);
+            transform: translateY(-30px);
+  }
+  60% {
+    -webkit-transform: translateY(-15px);
+            transform: translateY(-15px);
+  }
+}
+
+
 
 
 .nav-links {
@@ -9,3 +56,49 @@
 .nav-links.active {
   max-height: 500px; /* Adjust the height as needed */
 }
+
+
+
+
+.name {
+  font-family: monospace;
+  position: relative;
+}
+
+.name::before,
+.name::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.name::before {
+  --tw-bg-opacity: 1;
+  background-color: rgb(17 17 17 / var(--tw-bg-opacity));
+  animation: typing 4s steps(23) forwards;
+}
+
+.name::after {
+  width: 0.125em;
+  background-color: white;
+  animation: 
+  typing 4s steps(23) forwards,
+  blinking 700ms steps(23) infinite;
+}
+
+@keyframes typing{
+  to {
+      left: 100%;
+  }
+}
+
+
+@keyframes blinking{
+  to {
+      background-color: transparent;
+  }
+}
+
