@@ -11,9 +11,9 @@ export default function Education() {
   const [swipeDirection, setSwipeDirection] = useState(""); // Track swipe direction
 
   const courses = [
-    { id: 1, title: "Data Structures & Algorithms", link: "https://github.com/TaseskiCS/CP164", image: dsa, desc: "Study of data structures and their applications. Recursion, searching, sorting. Queues, stacks, heaps. Analysis of algorithms, big 'O' notation." },
-    { id: 2, title: "Object Oriented Programming", link: "https://github.com/TaseskiCS/CP213", image: java, desc: 'Fundamentals of object-oriented programming, classes, subclasses, inheritance, references, overloading.' },
-    { id: 3, title: "Intro To Programming", link: "https://github.com/TaseskiCS/CP104", image: python, desc: "Introduction to Python programming, searching, sorting, string manipulation and more."},
+    { id: 1, title: "Data Structures & Algorithms", link: "https://github.com/TaseskiCS/CP164", linkTitle: "Source Code", image: dsa, desc: "Study of data structures and their applications. Recursion, searching, sorting. Queues, stacks, heaps. Analysis of algorithms, big 'O' notation." },
+    { id: 2, title: "Object Oriented Programming", link: "https://github.com/TaseskiCS/CP213", linkTitle: "Source Code", image: java, desc: 'Fundamentals of object-oriented programming, classes, subclasses, inheritance, references, overloading.' },
+    { id: 3, title: "Intro To Programming", link: "https://github.com/TaseskiCS/CP104", linkTitle: "Source Code",image: python, desc: "Introduction to Python programming, searching, sorting, string manipulation and more."},
     { id: 4, title: "Digital Electronics", link: "", image: electronics, desc:'Introduction to digital logic: logic gates, combinational circuit analysis using Boolean algebra and Karnaugh maps, number systems and codes, minimization techniques applied to combinational logic systems; flip-flops, multivibrators, counters and shift registers' },
   ];
 
@@ -34,7 +34,7 @@ export default function Education() {
   };
 
   return (
-    <div id="Education" className="flex justify-center flex-col min-h-screen p-20 mt-24 text-white">
+    <div id="Education" className="flex justify-center flex-col min-h-screen p-2 md:p-20 mt-24 text-white">
       <h1 className="text-center text-5xl font-bold">Education And Related Coursework</h1>
       <p className="text-center font-light mb-5 text-gray-400">Class of 2027</p>
       <div className="flex justify-center mb-6">
@@ -66,6 +66,7 @@ export default function Education() {
             name={courses[currentIndex].title}
             link={courses[currentIndex].link}
             desc={courses[currentIndex].desc}
+            linkTitle={courses[currentIndex].linkTitle}
           />
         </div>
 

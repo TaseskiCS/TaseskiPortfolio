@@ -84,9 +84,6 @@ const Tag = ({ text, icon }) => (
 
 const Carousel = () => (
   <div className="Carousel">
-    <header>
-      <h1>Skills</h1>
-    </header>
     <div className="tag-list">
       {[...new Array(ROWS)].map((_, i) => (
         <InfiniteLoopSlider

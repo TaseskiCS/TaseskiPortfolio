@@ -4,11 +4,7 @@ import CertCard from "../CertCard.js"
 import serblink from "../../assets/serblinkoutline.png"
 import citizenfx from "../../assets/cfx.jpg"
 import lcs from "../../assets/lcs.png"
-import box from '../../assets/box.png'
-import mymap from '../../assets/mymap-logo.png'
-import emoz from '../../assets/emoz.jpg'
-import fitjot from '../../assets/fitjot.png'
-import profile from '../../assets/profile.jpeg'
+
 import "./index.scss";
 
 const data = [
@@ -70,20 +66,22 @@ const VerticalTimeline = (props) => {
       link,
       date
     } = props;
-    const cls = `mt-40 vertical-timeline--item ${index % 2 !== 0 ? 'right' : ''}`;
+    const cls = `timeline vertical-timeline--item ${index % 2 !== 0 ? 'right' : ''}`;
     return(
-      <div id="Experience" className={cls}>
-        <div className="vertical-timeline--badge"></div>
-        <div className="vertical-timeline--content" style={{ backgroundImage }}>
-          <div className='flex justify-between items-center'>
+      <>
+        <div id="Experience" className={cls}>
+            <div className="vertical-timeline--badge"></div>
+            <div className="vertical-timeline--content" style={{ backgroundImage }}>
+            <div className='flex justify-between items-center'>
 
 
-          <CertCard name={title} type='image'img={logo} link ={link}issued={company} date={date} />
+                <CertCard name={title} type='image'img={logo} link ={link}linkTitle={company} date={date} />
+                
 
-
-          </div>
+            </div>
+            </div>
         </div>
-      </div>
+      </>
     );
   }
   
@@ -95,11 +93,13 @@ const VerticalTimeline = (props) => {
 export default function Experience(){
     return (
         <>
-            <div className="mt-10 flex justify-center">
-                <h3 className="font-bold text-5xl">Experience</h3>
-            
+            <div className="mt-24">
+                <div className="mt-24 flex justify-center">
+                    <h3 className="font-bold text-5xl mt-24">Experience</h3>
+                
+                </div>
+                <VerticalTimeline data={data} />
             </div>
-            <VerticalTimeline data={data} />
         </>
     )
 }

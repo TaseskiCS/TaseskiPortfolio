@@ -27,7 +27,7 @@ $font-primary: 'Open Sans';
   }
 }
 
-*, *::before, *::after {
+.timeline, .timeline::before, .timeline::after {
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -53,7 +53,6 @@ a {
 
 }
 
-// --- //
 
 .vertical-timeline {
   $width-broken: 90%;

@@ -9,6 +9,7 @@ import Education from './components/Education';
 import Experience from './components/Experience/Experience.js';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import Projects from './components/Projects/Projects.js';
 
 
 function App() {
@@ -23,17 +24,6 @@ function App() {
       {/* Navbar */}
       <Navbar />
 
-      
-        {/* <div className="pt-[80px] px-6 lg:px-20 xl:px-36">
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/Skills" element={<Skills />} />
-            <Route path="/Education" element={<Education />} />
-            <Route path="/Experience" element={<Experience />} />
-            <Route path="*" element={<Home />} />
-          </Routes>
-        </div> */}
-        {/* Sections */}
         <div className="pt-[80px] px-6 lg:px-20 xl:px-36">
           <section id="Home">
             <Home/>
@@ -43,6 +33,9 @@ function App() {
           </section>
           <section id="Experience">
             <Experience/>
+          </section>
+          <section id="Projects">
+            <Projects/>
           </section>
 
           <section id="Education">
