@@ -1,16 +1,14 @@
 {
   "files": {
-    "main.css": "/static/css/main.268ed33d.css",
-    "main.js": "/static/js/main.a1eef755.js",
+    "main.css": "/static/css/main.c5ab0265.css",
+    "main.js": "/static/js/main.52965d04.js",
     "static/js/453.f975114d.chunk.js": "/static/js/453.f975114d.chunk.js",
     "static/media/mymap-logo.png": "/static/media/mymap-logo.97e3b8eb6d559b821aca.png",
-    "static/media/box.png": "/static/media/box.ccc57915311d8b4431b1.png",
     "static/media/TaseskiLogo2.png": "/static/media/TaseskiLogo2.1d33bd2416ccfca30ed0.png",
     "static/media/AntonioTaseski.pdf": "/static/media/AntonioTaseski.a5d8cc9c68165ad155cd.pdf",
     "static/media/laurier.png": "/static/media/laurier.5fbc4ab040e1a271c12e.png",
     "static/media/serblinkoutline.png": "/static/media/serblinkoutline.d702e158bb52acd36bbd.png",
     "static/media/java.png": "/static/media/java.fdabd4e11f1235e4e8e0.png",
-    "static/media/dropdown.png": "/static/media/dropdown.33823a6b7be2b5001593.png",
     "static/media/profile2.png": "/static/media/profile2.fbdb7316a10fbcb581b2.png",
     "static/media/lua.png": "/static/media/lua.7ec6d7b906d58f76e50f.png",
     "static/media/emoz.jpg": "/static/media/emoz.f431d5c146fabdbee4f9.jpg",
@@ -19,12 +17,10 @@
     "static/media/lcs.png": "/static/media/lcs.ca460a235b166990ce58.png",
     "static/media/sql.png": "/static/media/sql.5d49229070799a508017.png",
     "static/media/Dart_logo.png": "/static/media/Dart_logo.eb448d12693079addc14.png",
-    "static/media/profile.jpeg": "/static/media/profile.b5ad59c9b2ae536087ae.jpeg",
     "static/media/scss.png": "/static/media/scss.6747d5c68a381e29fc69.png",
     "static/media/jquery.png": "/static/media/jquery.fba005ffa2a5873a1f3f.png",
     "static/media/mysql.png": "/static/media/mysql.f926799293f6ee1f0b0d.png",
     "static/media/angular.png": "/static/media/angular.3a69a9e22d05f7699797.png",
-    "static/media/closemenu.png": "/static/media/closemenu.8ff0b3fc1bfc04a089d8.png",
     "static/media/mongo.png": "/static/media/mongo.83b60de876d715e1db75.png",
     "static/media/fitjot.png": "/static/media/fitjot.16af5b35075439d61061.png",
     "static/media/electronics.jpg": "/static/media/electronics.99f539be79bb6d97d15c.jpg",
@@ -38,12 +34,12 @@
     "static/media/tailwind.svg": "/static/media/tailwind.50fbcf516b9a3774e9a83272167059ae.svg",
     "static/media/express.svg": "/static/media/express.ea97b712340ffb8f11d85ccb96309507.svg",
     "index.html": "/index.html",
-    "main.268ed33d.css.map": "/static/css/main.268ed33d.css.map",
-    "main.a1eef755.js.map": "/static/js/main.a1eef755.js.map",
+    "main.c5ab0265.css.map": "/static/css/main.c5ab0265.css.map",
+    "main.52965d04.js.map": "/static/js/main.52965d04.js.map",
     "453.f975114d.chunk.js.map": "/static/js/453.f975114d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.268ed33d.css",
-    "static/js/main.a1eef755.js"
+    "static/css/main.c5ab0265.css",
+    "static/js/main.52965d04.js"
   ]
 }
