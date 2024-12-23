@@ -4,7 +4,6 @@ import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 import Navbar from './components/Navbar';
 import Home from './components/Home';
 import Skills from './components/Skills/Skills.js'
-import Carousel from './components/Skills/Carousel/Carousel.js';
 import Education from './components/Education';
 import Experience from './components/Experience/Experience.js';
 import AOS from 'aos';

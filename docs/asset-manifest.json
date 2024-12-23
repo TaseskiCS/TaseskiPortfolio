@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.c5ab0265.css",
-    "main.js": "/static/js/main.52965d04.js",
+    "main.css": "/static/css/main.aef083aa.css",
+    "main.js": "/static/js/main.8baaa022.js",
     "static/js/453.f975114d.chunk.js": "/static/js/453.f975114d.chunk.js",
     "static/media/mymap-logo.png": "/static/media/mymap-logo.97e3b8eb6d559b821aca.png",
     "static/media/TaseskiLogo2.png": "/static/media/TaseskiLogo2.1d33bd2416ccfca30ed0.png",
@@ -34,12 +34,12 @@
     "static/media/tailwind.svg": "/static/media/tailwind.50fbcf516b9a3774e9a83272167059ae.svg",
     "static/media/express.svg": "/static/media/express.ea97b712340ffb8f11d85ccb96309507.svg",
     "index.html": "/index.html",
-    "main.c5ab0265.css.map": "/static/css/main.c5ab0265.css.map",
-    "main.52965d04.js.map": "/static/js/main.52965d04.js.map",
+    "main.aef083aa.css.map": "/static/css/main.aef083aa.css.map",
+    "main.8baaa022.js.map": "/static/js/main.8baaa022.js.map",
     "453.f975114d.chunk.js.map": "/static/js/453.f975114d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c5ab0265.css",
-    "static/js/main.52965d04.js"
+    "static/css/main.aef083aa.css",
+    "static/js/main.8baaa022.js"
   ]
 }
