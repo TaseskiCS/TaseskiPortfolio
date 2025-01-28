@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import taseski from '../assets/TaseskiLogo2.png'; 
-import resume from '../assets/AntonioTaseski.pdf';
+import resume from '../assets/Resume_AntonioTaseski.pdf';
 
 
 export default function Navbar() {
