@@ -1,14 +1,14 @@
 import './App.css';
 import {useEffect} from 'react'
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
-import Navbar from './components/Navbar';
-import Home from './components/Home';
-import Skills from './components/Skills/Skills.js'
-import Education from './components/Education';
-import Experience from './components/Experience/Experience.js';
+import Navbar from './components/Navbar.jsx';
+import Home from './components/Home.jsx';
+import Skills from './components/Skills/Skills.jsx'
+import Education from './components/Education.jsx';
+import Experience from './components/Experience/Experience.jsx';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import Projects from './components/Projects/Projects.js';
+import Projects from './components/Projects/Projects.jsx';
 
 
 function App() {

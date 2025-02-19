@@ -1,4 +1,4 @@
-import Carousel from './Carousel/Carousel.js';
+import Carousel from './Carousel/Carousel.jsx';
 
 
 export default function Skills() {

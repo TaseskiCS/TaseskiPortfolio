@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import CertCard from '../CertCard'
+import InfoCard from '../InfoCard'
 import mymap from '../../assets/mymap-logo.png'
 import emoz from '../../assets/emoz.jpg'
 import fitjot from '../../assets/fitjot.png'
@@ -54,7 +54,7 @@ const Projects = () => {
                 : "opacity-100"
             }`}
           >
-            <CertCard
+            <InfoCard
               img={courses[currentIndex].image}
               name={courses[currentIndex].title}
               link={courses[currentIndex].link}

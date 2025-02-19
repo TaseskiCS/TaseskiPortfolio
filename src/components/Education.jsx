@@ -1,4 +1,4 @@
-import CertCard from "./CertCard.js";
+import InfoCard from "./InfoCard.jsx";
 import React, { useState } from "react";
 import laurier from "../assets/laurier.png";
 import dsa from "../assets/dsa.png";
@@ -61,7 +61,7 @@ export default function Education() {
               : "opacity-100"
           }`}
         >
-          <CertCard
+          <InfoCard
             img={courses[currentIndex].image}
             name={courses[currentIndex].title}
             link={courses[currentIndex].link}

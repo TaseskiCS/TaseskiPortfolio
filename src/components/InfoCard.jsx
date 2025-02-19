@@ -1,4 +1,4 @@
-export default function CertCard(props){
+export default function InfoCard(props){
     return (
         <a href={props.img}>
         <div className="hover:bg-dark w-full h-full bg-dark-200 rounded-md py-4 px-4">
