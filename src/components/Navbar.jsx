@@ -64,19 +64,7 @@ export default function Navbar() {
                     </a>
                 </div>
             </div>
-            {/* <div className="fixed z-50 left-1/2 md:left-12 top-14 transform -translate-x-1/2 flex flex-row items-center gap-5">
-                {sections.map((section) => (
-                    <div
-                        key={section}
-                        onClick={() => scrollToSection(section)}
-                        className={`w-4 h-4 rounded-full cursor-pointer transition-all duration-300 ${
-                            activeSection === section ? 'bg-white w-6 h-6 scale-125' : 'bg-gray-500 hover:scale-110'
-                        }`}
-                        title={section}
-                    />
-                ))}
-            </div> */}
-            <div className="fixed z-50 left-1/2 md:left-auto md:right-8 top-14 md:top-1/2 transform -translate-x-1/2 md:-translate-y-1/2 flex flex-row gap-5 md:flex-col items-center md:space-y-4">
+            <div className="fixed z-50 left-1/2 md:left-auto md:right-8 top-24 md:top-1/2 transform -translate-x-1/2 md:-translate-y-1/2 flex flex-row gap-5 md:flex-col items-center md:space-y-4">
                 {sections.map((section) => (
                     <div
                         key={section}
