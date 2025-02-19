@@ -27,9 +27,8 @@ const SlideSection = ({ children, Content, info }) => {
     const showSlide = open && Content;
 
     return (
-        <div
-            onMouseEnter={() => setOpen(true)}
-            onMouseLeave={() => setOpen(false)}
+        <button
+            onClick={() => open ? setOpen(false) : setOpen(true)}
             className="relative h-fit w-fit flex flex-col items-center"
         >
             <a  className="relative text-white font-bold flex justify-center">
@@ -56,7 +55,7 @@ const SlideSection = ({ children, Content, info }) => {
                     </motion.div>
                 )}
             </AnimatePresence>
-        </div>
+        </button>
     );
 };
 
