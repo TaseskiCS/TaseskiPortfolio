@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 import InfoCard from '../InfoCard'
-import mymap from '../../assets/mymap-logo.png'
+import mymap from '../../assets/projects/mymap-preview.png'
 import emoz from '../../assets/emoz.jpg'
 import fitjot from '../../assets/fitjot.png'
 import profile from '../../assets/profile2.png'
@@ -37,16 +37,16 @@ const Projects = () => {
     return (
       <div id="Projects" className="flex justify-center flex-col min-h-screen p-2 md:p-20 mt-24 text-white">
         <h1 className="text-center text-5xl font-bold">Projects</h1>
-        <div className="relative flex items-center justify-center mt-6">
+        <div className="flex items-center justify-center mt-6">
           <button
             onClick={handlePrev}
-            className="absolute left-0 md:left-20 top-1/2 transform -translate-y-1/2  text-white text-5xl px-4 py-2 rounded-full z-10 hover:text-6xl"
+            className=" text-white text-5xl px-4 py-2 rounded-full z-10"
           >
             ‹
           </button>
   
           <div
-            className={`w-full max-w-sm transition-transform duration-300 ${
+            className={`w-full max-w-4xl transition-transform duration-100 ${
               swipeDirection === "right"
                 ? "translate-x-full opacity-0"
                 : swipeDirection === "left"
@@ -65,7 +65,7 @@ const Projects = () => {
   
           <button
             onClick={handleNext}
-            className="absolute right-0 md:right-20 top-1/2 transform  -translate-y-1/2  text-5xl px-4 py-2 rounded-full z-10 hover:text-6xl"
+            className="text-5xl px-4 py-2 rounded-full z-10"
           >
             ›
           </button>
