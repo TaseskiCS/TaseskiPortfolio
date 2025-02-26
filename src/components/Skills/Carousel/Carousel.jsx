@@ -23,12 +23,15 @@ import django from "../../../assets/skills/django.png";
 import mysql from "../../../assets/skills/mysql.png";
 import mongo from "../../../assets/skills/mongo.png";
 import flutter from "../../../assets/skills/flutter.png";
+import nextjs from "../../../assets/skills/nextjs.png";
+import bert from "../../../assets/skills/bert.png";
+import bootstrap from "../../../assets/skills/bootstrap.png";
 
 const COLORS = ['#bbf7d0', '#99f6e4', '#bfdbfe', '#ddd6fe', '#f5d0fe', '#fed7aa', '#fee2e2'];
-const TAGS = ['HTML', 'CSS', 'JavaScript', 'Typescript', 'Tailwind', 'React', 'Node', 'SQL', 'Python', 'Django', 'MongoDB', 'Flutter', 'Dart', 'Lua', 'Java', 'Git', 'Express', 'Angular', 'SCSS', 'jQuery', 'MySQL'];
-const DURATION = 15000;
-const ROWS = 2;
-const TAGS_PER_ROW = 5;
+const TAGS = ['HTML', 'CSS', 'JavaScript', 'Typescript', 'Tailwind', 'React', 'Node', 'SQL', 'Python', 'Django', 'MongoDB', 'Flutter', 'Dart', 'Lua', 'Java', 'Git', 'Express', 'Angular', 'SCSS', 'jQuery', 'MySQL', 'NextJS', 'BERT', 'Bootstrap'];
+const DURATION = 20500;
+const ROWS = 3;
+const TAGS_PER_ROW = TAGS.length;
 
 
 const TAG_ICONS = {
@@ -52,7 +55,10 @@ const TAG_ICONS = {
   Angular: angular,
   SCSS: SCSS,
   jQuery: jquery,
-  MySQL: mysql
+  MySQL: mysql,
+  NextJS: nextjs,
+  BERT: bert,
+  Bootstrap: bootstrap
 };
 
 const random = (min, max) => Math.floor(Math.random() * (max - min)) + min;

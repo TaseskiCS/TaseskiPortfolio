@@ -11,11 +11,11 @@ const Projects = () => {
     const [swipeDirection, setSwipeDirection] = useState(""); // Track swipe direction
   
     const courses = [
-      { id: 1, title: "MyMap", link: "https://github.com/TaseskiCS/MyMap",linkTitle: "GitHub Repository", image: mymap, desc: "User-made link map to display their social data under a custom url handle, which they style through dashboard. Features a robust authentication system with token validation for secure and streamlined user experiences. Clean and precise frontend built in React with Next.js and Tailwind for a clean, user-friendly interface. Backend RESTful API in Node.js with Express to perform CRUD operations and send data upon request. User schema to support secure authentication and profile management on a non-relational Mongo database."},
-      { id: 2, title: "Emoz", link: "https://github.com/TaseskiCS/Emoz", linkTitle: "GitHub Repository", image: emoz, desc: "Emotion-analyzing journal app with speech analysis using BERT ML model and OpenAI’s Whisper. Highly graphical and chart-heavy dashboard representing date based analysis of journal entries. Cohesive backend RESTful API built using Python with Django providing CRUD operations. Non-relational HIVE database schema calculating the emotion id which is sent to frontend." },
-      { id: 3, title: "FitJot", link: "https://github.com/TaseskiCS/FitJot", linkTitle: "GitHub Repository", image: fitjot, desc: "Fitness web app where users can log, organize, and track workouts through a customizable task sheet. Easy-to-navigate, clean and structured frontend built in React with Bootstrap for seamless use. Node.js and Express RESTful API backend for CRUD operations on a non-relational Mongo database."},
-      { id: 4, title: "Personal Portfolio", link: "https://github.com/TaseskiCS/TaseskiPortfolio", linkTitle: "GitHub Repository", image: profile, desc:"Built with React for a great experience, using Tailwind and Sass to create a clean, modern design showcasing my traits and creative ability!" },
-      { id: 4, title: "TechPrep", link: "https://github.com/TaseskiCS/TechPrep", linkTitle: "GitHub Repository", image: stats, desc:"Features solutions to DSA problems using python through sites like LeetCode and Hackerrank" },
+      { id: 1, title: "MyMap", link: "https://github.com/TaseskiCS/MyMap",linkTitle: "GitHub Repository", image: mymap, desc: "A customizable link-mapping platform, a Next.js frontend, and a secure Node.js/Express backend with JWT authentication and using MongoDB for storage.", skills: ['MongoDB', 'Express.js', 'React', 'Next.js', 'Node.js', 'Tailwind']},
+      { id: 2, title: "Emoz", link: "https://github.com/TaseskiCS/Emoz", linkTitle: "GitHub Repository", image: emoz, desc: "An AI-powered journal app with speech-based emotion analysis, frontend built with Flutter, a data-driven dashboard, and a Django backend using a HIVE database.", skills: ['Python', 'Django', 'Flutter', 'BERT', 'MongoDB'] },
+      { id: 3, title: "FitJot", link: "https://github.com/TaseskiCS/FitJot", linkTitle: "GitHub Repository", image: fitjot, desc: "A fitness app for logging and tracking workouts with a React frontend and a Node.js/Express backend using MongoDB for data management.", skills: ['MongoDB', 'Express.js', 'React', 'Node.js', 'Bootstrap']},
+      { id: 4, title: "Personal Portfolio", link: "https://github.com/TaseskiCS/TaseskiPortfolio", linkTitle: "GitHub Repository", image: profile, desc:"A React-based portfolio with a clean, modern design using Tailwind and SCSS to showcase projects and accomplishments.", skills: ['React', 'Tailwind'] },
+      { id: 4, title: "TechPrep", link: "https://github.com/TaseskiCS/TechPrep", linkTitle: "GitHub Repository", image: stats, desc:"Features solutions to Data Structure and Algorithms problems using python through sites like LeetCode and Hackerrank",skills: ['Python'] },
     ];
   
     const handleNext = () => {
@@ -37,14 +37,7 @@ const Projects = () => {
     return (
       <div id="Projects" className="flex justify-center flex-col min-h-screen p-2 md:p-20 mt-24 text-white">
         <h1 className="text-center text-5xl font-bold">Projects</h1>
-        <div className="flex items-center justify-center mt-6">
-          <button
-            onClick={handlePrev}
-            className=" text-white text-5xl px-4 py-2 rounded-full z-10"
-          >
-            ‹
-          </button>
-  
+        <div className="flex items-center flex-col justify-center mt-6">
           <div
             className={`w-full max-w-4xl transition-transform duration-100 ${
               swipeDirection === "right"
@@ -59,16 +52,29 @@ const Projects = () => {
               name={courses[currentIndex].title}
               link={courses[currentIndex].link}
               desc={courses[currentIndex].desc}
-              linkTitle= {courses[currentIndex].linkTitle}
+              linkTitle = {courses[currentIndex].linkTitle}
+              skills = {courses[currentIndex].skills}
             />
           </div>
-  
-          <button
-            onClick={handleNext}
-            className="text-5xl px-4 py-2 rounded-full z-10"
-          >
-            ›
-          </button>
+          <div className='flex w-full mt-5 gap-3 justify-around'>
+            <button
+              onClick={handlePrev}
+              className=" text-white text-5xl px-4 py-2 rounded-full z-10 border-white border-2 "
+            >
+              ‹
+            </button>
+    
+    
+            <button
+              onClick={handleNext}
+              className="text-white text-5xl px-4 py-2 rounded-full z-10 border-white border-2 "
+            >
+              ›
+            </button>
+
+          </div>
+
+         
         </div>
       </div>
     );

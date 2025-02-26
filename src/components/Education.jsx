@@ -44,14 +44,7 @@ export default function Education() {
           alt="Laurier Logo"
         />
       </div>
-      <div className="relative flex items-center justify-center mt-6">
-        <button
-          onClick={handlePrev}
-          className="absolute left-0 md:left-20 top-1/2 transform -translate-y-1/2  text-white text-5xl px-4 py-2 rounded-full z-10 hover:text-6xl"
-        >
-          ‹
-        </button>
-
+      <div className="flex items-center flex-col justify-center mt-6">
         <div
           className={`w-full max-w-sm transition-transform duration-300 ${
             swipeDirection === "right"
@@ -70,12 +63,23 @@ export default function Education() {
           />
         </div>
 
-        <button
-          onClick={handleNext}
-          className="absolute right-0 md:right-20 top-1/2 transform  -translate-y-1/2  text-5xl px-4 py-2 rounded-full z-10 hover:text-6xl"
-        >
-          ›
-        </button>
+        <div className='flex w-full mt-5 gap-3 justify-around'>
+            <button
+              onClick={handlePrev}
+              className=" text-white text-5xl px-4 py-2 rounded-full z-10 border-white border-2 "
+            >
+              ‹
+            </button>
+    
+    
+            <button
+              onClick={handleNext}
+              className="text-white text-5xl px-4 py-2 rounded-full z-10 border-white border-2 "
+            >
+              ›
+            </button>
+
+          </div>
       </div>
     </div>
   );

@@ -33,7 +33,7 @@ const data = [
   },
   {
     title: "Full Stack Engineer",
-    company: "CitizenFx",
+    company: "Cfx.re",
     logo: citizenfx,
     link: "https://cfx.re",
     date: "January 2021 - December 2023",
