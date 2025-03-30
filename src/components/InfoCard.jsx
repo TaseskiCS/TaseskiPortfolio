@@ -23,7 +23,12 @@ import flutter from "../assets/skills/flutter.png";
 import nextjs from "../assets/skills/nextjs.png";
 import bert from "../assets/skills/bert.png";
 import bootstrap from "../assets/skills/bootstrap.png";
-export default function InfoCard(props){
+
+import aws from "../assets/skills/aws.png";
+import firebase from "../assets/skills/firebase.webp";
+import fastapi from "../assets/skills/fastapi.png";
+import spacy from "../assets/skills/spacy.webp";
+export default function InfoCard({ img, name, link, linkTitle, skills, desc }) {
     const skillIcons = {
         "JavaScript": javascript,
         "Python": python,
@@ -48,49 +53,52 @@ export default function InfoCard(props){
         "Flutter": flutter,
         'Next.js': nextjs,
         'BERT': bert,
-        'Bootstrap': bootstrap
+        'Bootstrap': bootstrap,
+        "AWS": aws,
+        'Firebase': firebase,
+        'spaCy': spacy,
+        'FastAPI': fastapi,
     };
     
-    
     return (
-        <div className="relative hover:bg-dark w-full h-full bg-dark-200 rounded-md py-4 px-4">
-            <div className='flex justify-center'>
-                <img 
-                    src={props.img} 
-                    className="w-full md:w-2/3 h-52 md:h-64 object-cover  shadow-md border-white border-2 rounded-xl" 
-                    alt={props.name} 
-                />
-
-            </div>
-
-            
-            <div className="mt-2 text-center">
-                <h1 className="font-bold md:text-xl">{props.name}</h1>
-                <a className="flex justify-center" href={props.link} rel="noreferrer" target="_blank">
-                    <p className="text-sm underline underline-offset-1 text-blue-600 font-light md:text-xl">{props.linkTitle}</p>
-                </a>
-            </div>
-        
-           <div className="flex mt-4 flex-col md:flex-row items-start gap-4">
-                {props.skills && (
-                    <div className="flex flex-wrap w-full md:w-1/2 justify-center md:justify-start gap-2 gap-y-2 self-start">
-                        {props.skills.map((item, index) => (
-                            <span 
-                                key={index} 
-                                className="flex items-center gap-2 bg-gray-400 rounded-lg px-2 py-1 text-[10px] md:text-xs md:px-4 md:py-2 font-bold border-white border-2 text-white transition-all duration-300 hover:bg-gray-500 hover:scale-105"
-                            >
-                                <img src={skillIcons[item] || "/icons/default.png"} alt={item} className="w-5 h-5" />
-                                {item}
-                            </span>
-                        ))}
-                    </div>
-                )}
-                <div className="flex-1 border-2 rounded-xl p-2 border-white min-h-[80px]">
-                    {props.desc}
+        <div className="group bg-neutral-100 dark:bg-neutral-800 rounded-lg shadow-md hover:shadow-lg transition-all duration-300">
+            <div className="block overflow-hidden">
+                <div className="relative">
+                    <img 
+                        src={img} 
+                        alt={name} 
+                        className="rounded-t-lg w-full h-[400px] group-hover:h-[500px] object-cover object-center transition-all duration-500" 
+                    />
                 </div>
             </div>
-
-
+            <div className="p-5">
+                <div className="flex justify-between items-start gap-4">
+                    <div>
+                        <a 
+                            href={link} 
+                            target="_blank" 
+                            rel="noopener noreferrer" 
+                            className="text-neutral-800 underline dark:text-neutral-200 font-bold text-2xl hover:text-neutral-600 dark:hover:text-neutral-400 transition-colors duration-200 block"
+                        >
+                            {name}
+                        </a>
+                        <p className="text-neutral-600 dark:text-neutral-400 mt-2 leading-relaxed">{desc}</p>
+                        {skills && (
+                            <div className="flex flex-wrap gap-2 mt-4">
+                                {skills.map((item, index) => (
+                                    <span 
+                                        key={index} 
+                                        className="flex items-center gap-2 bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300 rounded-full px-2 py-1 text-xs"
+                                    >
+                                        <img src={skillIcons[item] || "/icons/default.png"} alt={item} className="w-5 h-5" />
+                                        {item}
+                                    </span>
+                                ))}
+                            </div>
+                        )}
+                    </div>
+                </div>
+            </div>
         </div>
-    )
+    );
 }
