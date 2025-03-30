@@ -67,7 +67,7 @@ export default function InfoCard({ img, name, link, linkTitle, skills, desc }) {
                     <img 
                         src={img} 
                         alt={name} 
-                        className="rounded-t-lg w-full h-[400px] group-hover:h-[500px] object-cover object-center transition-all duration-500" 
+                        className="rounded-t-lg w-full h-[200px] md:h-[400px] md:group-hover:h-[500px] object-cover object-center transition-all duration-500" 
                     />
                 </div>
             </div>
