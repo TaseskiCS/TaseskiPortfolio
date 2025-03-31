@@ -59,23 +59,38 @@ export default function InfoCard({ img, name, link, linkTitle, skills, desc }) {
         'spaCy': spacy,
         'FastAPI': fastapi,
     };
-    
     return (
         <div className="group bg-neutral-100 dark:bg-neutral-800 rounded-lg shadow-md hover:shadow-lg transition-all duration-300">
             <div className="block overflow-hidden">
                 <div className="relative">
-                    <img 
-                        src={img} 
-                        alt={name} 
-                        className="rounded-t-lg w-full h-[200px] md:h-[400px] md:group-hover:h-[500px] object-cover object-center transition-all duration-500" 
-                    />
+                    {link[1] ? (
+                        <a
+                            href={link[1]}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="block"
+                        >
+                            <img 
+                                src={img} 
+                                alt={name} 
+                                className="rounded-t-lg w-full h-[100px] md:h-[200px] md:hover:h-[300px] object-cover transition-all duration-500" 
+                            />
+                        </a>
+                    ) : (
+                        <img 
+                            src={img} 
+                            alt={name} 
+                            className="rounded-t-lg w-full h-[100px] md:h-[200px] md:hover:h-[300px] object-cover transition-all duration-500" 
+                        />
+                    )}
                 </div>
+
             </div>
             <div className="p-5">
                 <div className="flex justify-between items-start gap-4">
                     <div>
                         <a 
-                            href={link} 
+                            href={link[0]} 
                             target="_blank" 
                             rel="noopener noreferrer" 
                             className="text-neutral-800 underline dark:text-neutral-200 font-bold text-2xl hover:text-neutral-600 dark:hover:text-neutral-400 transition-colors duration-200 block"

@@ -13,12 +13,12 @@ const Projects = () => {
   
     const courses = [
       
-      { id: 1, title: "CVLens", link: "https://github.com/TaseskiCS/CVLens",linkTitle: "GitHub Repository", image: cvlens, desc: "Created a web app to extract structured data from uploaded resumes in PDF/DOCX formats, using Named Entity Recognition with a custom built spaCy NLP model I built, and prepared a dataset with over 200 resumes in NER format.", skills: ['React', 'Next.js', 'FastAPI', 'AWS', 'spaCy', 'Tailwind']},
-      { id: 2, title: "Infinite Context", link: "https://github.com/TaseskiCS/infinite-context",linkTitle: "GitHub Repository", image: infinitecontext, desc: "Developed a context management system, optimizing LLM’s by 230%, for handling documents, images, videos, as well as surpassing a 10M+ token context window.", skills: ['React', 'Next.js', 'Node.js', 'Firebase', 'Tailwind']},
-      { id: 3, title: "MyMap", link: "https://github.com/TaseskiCS/MyMap",linkTitle: "GitHub Repository", image: mymap, desc: "A customizable link-mapping platform, a Next.js frontend, and a secure Node.js/Express backend with JWT authentication and using MongoDB for storage.", skills: ['MongoDB', 'Express.js', 'React', 'Next.js', 'Node.js', 'Tailwind']},
-      { id: 4, title: "Emoz", link: "https://github.com/TaseskiCS/Emoz", linkTitle: "GitHub Repository", image: emoz, desc: "An AI-powered journal app with speech-based emotion analysis, frontend built with Flutter, a data-driven dashboard, and a Django backend using a HIVE database.", skills: ['Python', 'Django', 'Flutter', 'BERT', 'MongoDB'] },
-      { id: 5, title: "FitJot", link: "https://github.com/TaseskiCS/FitJot", linkTitle: "GitHub Repository", image: fitjot, desc: "A fitness app for logging and tracking workouts with a React frontend and a Node.js/Express backend using MongoDB for data management.", skills: ['MongoDB', 'Express.js', 'React', 'Node.js', 'Bootstrap']},
-      { id: 6, title: "TechPrep", link: "https://github.com/TaseskiCS/TechPrep", linkTitle: "GitHub Repository", image: stats, desc:"Features solutions to Data Structure and Algorithms problems using python through sites like LeetCode and Hackerrank",skills: ['Python'] },
+      { id: 1, title: "CVLens", link: ["https://github.com/TaseskiCS/CVLens", "https://cvlens.vercel.app"],linkTitle: "GitHub Repository", image: cvlens, desc: "Created a web app to extract structured data from uploaded resumes in PDF/DOCX formats, using Named Entity Recognition with a custom built spaCy NLP model I built, and prepared a dataset with over 200 resumes in NER format.", skills: ['React', 'Next.js', 'FastAPI', 'AWS', 'spaCy', 'Tailwind']},
+      { id: 2, title: "Infinite Context", link: ["https://github.com/TaseskiCS/infinite-context", "https://infinite-context.netlify.app"],linkTitle: "GitHub Repository", image: infinitecontext, desc: "Developed a context management system, optimizing LLM’s by 230%, for handling documents, images, videos, as well as surpassing a 10M+ token context window.", skills: ['React', 'Next.js', 'Node.js', 'Firebase', 'Tailwind']},
+      { id: 3, title: "MyMap", link: ["https://github.com/TaseskiCS/MyMap", "https://my-map-swart.vercel.app/"],linkTitle: "GitHub Repository", image: mymap, desc: "A customizable link-mapping platform, a Next.js frontend, and a secure Node.js/Express backend with JWT authentication and using MongoDB for storage.", skills: ['MongoDB', 'Express.js', 'React', 'Next.js', 'Node.js', 'Tailwind']},
+      { id: 4, title: "Emoz", link: ["https://github.com/TaseskiCS/Emoz"], linkTitle: "GitHub Repository", image: emoz, desc: "An AI-powered journal app with speech-based emotion analysis, frontend built with Flutter, a data-driven dashboard, and a Django backend using a HIVE database.", skills: ['Python', 'Django', 'Flutter', 'BERT', 'MongoDB'] },
+      { id: 5, title: "FitJot", link: ["https://github.com/TaseskiCS/FitJot"], linkTitle: "GitHub Repository", image: fitjot, desc: "A fitness app for logging and tracking workouts with a React frontend and a Node.js/Express backend using MongoDB for data management.", skills: ['MongoDB', 'Express.js', 'React', 'Node.js', 'Bootstrap']},
+      { id: 6, title: "TechPrep", link: ["https://github.com/TaseskiCS/TechPrep"], linkTitle: "GitHub Repository", image: stats, desc:"Features solutions to Data Structure and Algorithms problems using python through sites like LeetCode and Hackerrank",skills: ['Python'] },
 
     ];
   
@@ -41,7 +41,7 @@ const Projects = () => {
     return (
       <div id="Projects" className="flex justify-center flex-col min-h-screen p-2 md:p-20 mt-24 text-white">
         <h1 className="text-center text-5xl font-bold">Projects</h1>
-        <div className="flex items-center flex-col justify-center mt-6">
+        <div className="flex items-center flex-col mx-1 md:mx-32 justify-center mt-6">
           <div
             className={`w-full max-w-4xl transition-transform duration-100 ${
               swipeDirection === "right"
