@@ -28,7 +28,7 @@ import aws from "../assets/skills/aws.png";
 import firebase from "../assets/skills/firebase.webp";
 import fastapi from "../assets/skills/fastapi.png";
 import spacy from "../assets/skills/spacy.webp";
-export default function InfoCard({ img, name, link, linkTitle, skills, desc }) {
+export default function InfoCard({ img, name, link, skills, desc }) {
     const skillIcons = {
         "JavaScript": javascript,
         "Python": python,
