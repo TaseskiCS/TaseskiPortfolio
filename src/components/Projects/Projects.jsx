@@ -11,7 +11,7 @@ const Projects = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
     const [swipeDirection, setSwipeDirection] = useState(""); // Track swipe direction
   
-    const courses = [
+    const projects = [
       
       { id: 1, title: "CVLens", link: ["https://github.com/TaseskiCS/CVLens", "https://cvlens.vercel.app"], image: cvlens, desc: "Created a web app to extract structured data from uploaded resumes in PDF/DOCX formats, using Named Entity Recognition with a custom built spaCy NLP model I built, and prepared a dataset with over 200 resumes in NER format.", skills: ['React', 'Next.js', 'FastAPI', 'AWS', 'spaCy', 'Tailwind']},
       { id: 2, title: "Infinite Context", link: ["https://github.com/TaseskiCS/infinite-context", "https://infinite-context.netlify.app"], image: infinitecontext, desc: "Developed a context management system, optimizing LLM’s by 230%, for handling documents, images, videos, as well as surpassing a 10M+ token context window.", skills: ['React', 'Next.js', 'Node.js', 'Firebase', 'Tailwind']},
@@ -25,7 +25,7 @@ const Projects = () => {
     const handleNext = () => {
       setSwipeDirection("right");
       setTimeout(() => {
-        setCurrentIndex((prevIndex) => (prevIndex + 1) % courses.length);
+        setCurrentIndex((prevIndex) => (prevIndex + 1) % projects.length);
         setSwipeDirection("");
       }, 300); // Match CSS transition duration
     };
@@ -33,7 +33,7 @@ const Projects = () => {
     const handlePrev = () => {
       setSwipeDirection("left");
       setTimeout(() => {
-        setCurrentIndex((prevIndex) => (prevIndex - 1 + courses.length) % courses.length);
+        setCurrentIndex((prevIndex) => (prevIndex - 1 + projects.length) % projects.length);
         setSwipeDirection("");
       }, 300); // Match CSS transition duration
     };
@@ -52,12 +52,12 @@ const Projects = () => {
             }`}
           >
             <InfoCard
-              img={courses[currentIndex].image}
-              name={courses[currentIndex].title}
-              link={courses[currentIndex].link}
-              desc={courses[currentIndex].desc}
-              linkTitle = {courses[currentIndex].linkTitle}
-              skills = {courses[currentIndex].skills}
+              img={projects[currentIndex].image}
+              name={projects[currentIndex].title}
+              link={projects[currentIndex].link}
+              desc={projects[currentIndex].desc}
+              linkTitle = {projects[currentIndex].linkTitle}
+              skills = {projects[currentIndex].skills}
             />
           </div>
           <div className='flex w-full mt-5 gap-3 justify-around'>
