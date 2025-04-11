@@ -38,7 +38,7 @@ export default function Home () {
                 
                 
                     
-                    <ul className='flex mt-2 gap-5 items-center justify-between'>
+                    <ul className='flex mt-2 gap-5 items-center max-w-[400px] justify-between'>
                         <li>
                                 <a href='https://github.com/TaseskiCS' rel="noreferrer" target="_blank"><FontAwesomeIcon fontSize={'40px'} icon={faGithub} /></a>
                         </li> 
