@@ -9,6 +9,8 @@ import Experience from './components/Experience/Experience.jsx';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Projects from './components/Projects/Projects.jsx';
+import Awards from './components/Awards/Awards.jsx';
+
 
 
 function App() {
@@ -35,6 +37,9 @@ function App() {
           </section>
           <section id="Projects">
             <Projects/>
+          </section>
+          <section id="Awards">
+            <Awards/>
           </section>
 
           <section id="Education">
