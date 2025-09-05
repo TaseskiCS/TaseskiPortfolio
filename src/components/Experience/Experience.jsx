@@ -19,7 +19,7 @@ const data = [
     ]
   },
   {
-    title: "Mobile Developer",
+    title: "Software Developer",
     company: "Laurier Computing Society",
     link: "https://lauriercs.ca",
     logo: lcs,
@@ -32,7 +32,7 @@ const data = [
     ]
   },
   {
-    title: "Full Stack Engineer",
+    title: "Freelance Software Engineer",
     company: "Cfx.re",
     logo: citizenfx,
     link: "https://cfx.re",

@@ -38,7 +38,7 @@ export default function Home () {
                 
                 
                     
-                    <ul className='flex mt-2 gap-5 items-center'>
+                    <ul className='flex mt-2 gap-5 items-center max-w-[400px] justify-between'>
                         <li>
                                 <a href='https://github.com/TaseskiCS' rel="noreferrer" target="_blank"><FontAwesomeIcon fontSize={'40px'} icon={faGithub} /></a>
                         </li> 
@@ -46,6 +46,11 @@ export default function Home () {
                         <li>
                             <a href='https://www.linkedin.com/in/antonio-taseski-8ba015290/' rel="noreferrer" target="_blank"><FontAwesomeIcon fontSize={'40px'} icon={faLinkedinIn} /></a>
                         </li>
+                        <div className="flex ml-5 items-center">
+                            <a href="https://wluring.xyz/api/taseskics/prev" className="mr-2 text-3xl">←</a>
+                            <a href="https://wluring.xyz"><img src='/wluring_white.png' className="w-20"/></a>
+                            <a href="https://wluring.xyz/api/taseskics/next" className="ml-2 text-3xl">→</a>
+                        </div>
                     </ul>
                 </div>
                 
@@ -59,6 +64,9 @@ export default function Home () {
             </button>
 
         </div>
+
+        
+
         </>
     )
 }
