@@ -2,8 +2,22 @@ import ExpCard from "./ExpCard";
 import serblink from "../../assets/serblinkoutline.png";
 import citizenfx from "../../assets/cfx.jpg";
 import lcs from "../../assets/lcs.png";
+import corbrook from "../../assets/corbrook.jpeg";
 
 const data = [
+  {
+    title: "Software Engineer Intern",
+    company: "Corbrook",
+    logo: corbrook,
+    link: "https://corbrook.com",
+    date: "May 2025 - August 2025",
+    descriptions: [
+      "Enhanced an internal job-matching platform with React, Electron, and Node.js, streamlining candidate placement.",
+      "Built job-matching algorithm using optimized PostgreSQL queries with smart caching, boosting match speed by 33%",
+      "Improved email tracking via webhooks, automating follow-ups based on click events connected to the REST API.",
+      "Contributed to an existing Docker-based CI/CD pipeline, improving build reliability and accelerating release cycles",
+    ]
+  },
   {
     title: "Software Developer Intern",
     company: "Serblink",
@@ -11,11 +25,10 @@ const data = [
     link: "https://serblink.org",
     date: "March 2024 - October 2024",
     descriptions: [
-      "Maintained AngularJS frontend with TypeScript, integrating server API’s to fetch and display dynamic data",
-      "Ensured seamless testing and deployments ran within the CI/CD Pipeline, by automating unit tests",
-      "Developed features including transaction handling, authentication, role based accounts, and translation",
-      "Transformed Figma designs into highly responsive UI, across devices using HTML, SCSS, and Bootstrap",
-      "Received and acted on high priority tasks directly from CTO, efficiently completing them on time"
+      "Delivered agile-driven Angular features, boosting app responsiveness via optimized TypeScript modules.",
+      "Automated testing in the CI/CD pipeline, reducing deployment failures by 25% and accelerating feature delivery",
+      "Spearheaded Stripe integration enhancements, optimizing transactions and improving user purchase experience.",
+      "Perfectly translated Figma designs into highly responsive UIs, ensuring 100% cross-device compatibility",
     ]
   },
   {
@@ -38,10 +51,10 @@ const data = [
     link: "https://cfx.re",
     date: "January 2021 - December 2023",
     descriptions: [
-      "Engineered and maintained user-friendly frontend interfaces for clients, utilizing jQuery, HTML, CSS",
-      "Built structured backend, focused on game logic using Node.js with Lua to ensure seamless experiences",
-      "Optimized resource utilization for cloud based instances (AWS, OVH) handling 1000s of connections",
-      "Stored diverse player data including inventory, state, currency in a highly relational MySQL database",
+      "Engineered cloud-hosted and vertically scalable game servers, handling 1000’s of concurrent client connections.",
+      "Optimized resource allocation and performance on Lua and Node.js game logic, ensuring seamless gameplay",
+      "Built user friendly and intuitive frontend’s with JavaScript, HTML, and CSS, improving player interaction.",
+      "Structured highly relational MySQL database’s to efficiently perform CRUD operations on players metadata",
     ]
   }
 ];

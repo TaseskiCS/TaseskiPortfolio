@@ -33,7 +33,7 @@ export default function Home () {
                     <div className="flex flex-col w-full mt-8 mb-10">
                         <h1 className="mb-3 text-xl text-gray-400">Hello! My name is</h1>
                         <h1 className="name mb-3 text-4xl ">Antonio Taseski</h1>
-                        <p className="text-md font-light text-gray-400 ">Passionate second-year Computer Science student, taking initiative to tackle challenges, and dive into the world of technology and innovation.</p>
+                        <p className="text-md font-light text-gray-400 ">Passionate third-year Computer Science student, taking initiative to tackle challenges, and dive into the world of technology and innovation.</p>
                     </div>
                 
                 
